@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="first_of_all_div">
+        <h1 id="ready">Are You Ready ?</h1>
+        <div class="yes_no">
+            <button class="glow-on-hover" id="yes">Yes</button>
+            <button class="glow-on-hover" id="no">No</button>
+        </div>
+        <div class="play_btn_cont">
+            <button class="glow-on-hover" id="play_btn" onclick="playGame()">Play Now</button>
+        </div>
+    </div>
+
+
+    <div class="player_one_details">
+        <h1>Player One Details</h1>
+        <div class="detfirstCont">
+        <div class="detailCont">
+            <label for="enter name">Enter Username:</label>
+            <input type="text" id="fplayername"><br>
+            <label for="">Choose Profile Picture:</label><br>
+            <div id="wrap">
+                <input type="file" accept="image/*" id="firstplayerinput" title = "Choose a Picture" onchange="previe_image(event)">
+            </div>
+            <button id="glow-on-hover" onclick="movePlayerTwo()">Submit</button>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="player_two_details">
+        <h1>Player Two Details</h1>
+        <div class="twodetailCont">
+            <div class="detsecondCont">
+            <label for="enter name">Enter Username:</label>
+            <input type="text" id="secondplayername"><br>
+            <label for="">Choose Profile Picture</label><br>
+            <div id="wrapper">
+            <input type="file" accept="image/*" id="secondplayerinput" onchange="preview_image(event)">
+        </div>
+            <button id="glow-on-hover" onclick="startGame()">Submit</button>
+        </div>
+    </div>
+</div>
+
+   <div class="mainCont">
+    <div class="container">
+       <div class="nav">
+        <img id="output_image"/><br>
+        <h1>Vs</h1>
+        <img id="outpu_image"/>
+        <h5 id="curtime">Current Time</h5><br>
+         <h5 id="time"></h5>
+       </div>
+       <div class="tableCont">
+        <h1 id="turnPlayer"> Turn For Player One</h1>
+        <table>
+            <tr>
+                <td><button class="btn bx1 glow-on-hov"></button></td>
+                <td><button class="btn bx2 glow-on-hov"></button></td>
+                <td><button class="btn bx3 glow-on-hov"></button></td>
+      
+            </tr>
+            <tr>
+                <td><button class="btn bx4 glow-on-hov"></button></td>
+                <td><button class="btn bx5 glow-on-hov"></button></td>
+                <td><button class="btn bx6 glow-on-hov"></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn bx7 glow-on-hov"></button></td>
+                <td><button class="btn bx8 glow-on-hov"></button></td>
+                <td><button class="btn bx9 glow-on-hov"></button></td>
+            </tr>
+        </table>
+    </div>
+
+    </div>
+   </div>
+   <img src="./27dc16095583921ee36a2ea0fb5f3090.gif" class="animated" alt="">
+      <div class="winner">
+          <p id="wintext"></p>
+          <button class="glow-on-hover" id="reset">Reset</button>
+      </div>
+
+    
+    
+    <script src="./app.js" defer></script>
+</body>
+</html>
